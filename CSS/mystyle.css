@@ -61,7 +61,7 @@ header {
   
   /* =====Hero section styles===== */
   .hero {
-    background-image: url('Images_Video\HomeImage.png'); 
+    background-image: url('../Images_Video/HomeImage.png'); 
     background-size: cover; 
     background-position: center; 
     height: 60vh; 
@@ -363,7 +363,7 @@ body {
 }
 
 .member-card {
-  background-image: url('Images_Video\AvatarTeam.png');
+  background-image: url('../Images_Video/AvatarTeam.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
