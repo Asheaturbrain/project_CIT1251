@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Essence Tales</title>
+<link rel="stylesheet" href="C:\Users\Dell\Desktop\Projact_CIT\CSS\mystyle.css" type="text/css">
+<link rel="icon" type="image/png" href="C:\Users\Dell\Desktop\Projact_CIT\Images_Video\IconEssenceTales.png">
+<style>
+#EssenceTalesStyle:hover {
+  color: #5e2d1e;
+  background-color: #d88d65;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+<nav class="navbar">
+<div class="logo">Essence Tales</div>
+  <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Aboutperfumes.html">About Perfumes</a></li>
+      <li><a href="Top_Picks.html">Top Picks</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">Team</a></li>
+  </ul>
+</nav>
+</header>
+
+<!-- Hero section with a background image and welcome text -->
+<section class="hero">
+<div class="hero-text">
+  <h1>Essence Tales</h1>
+  <h2>Welcome to <span id="EssenceTalesStyle">Essence Tales</span></h2>
+  <p>Discover the world of enchanting perfumes</p>
+</div>
+</section>
+
+<!-- Intro section -->
+<section class="intro">
+ <h2>About Essence Tales</h2>
+ <p>
+    Essence Tales is your scented gateway to the world of fragrances. 
+    We celebrate the art of perfumery and invite you to explore notes of elegance, passion, and identity.
+  </p>
+</section>
+
+<!-- JS Tip Section -->
+<section class="tip-section" style="text-align:center; margin: 40px 0;">
+  <button onclick="showTip()">Show a Perfume Tip</button>
+  <p id="perfumeTip" style="margin-top:15px; font-style: italic;"></p>
+</section>
+
+<script>
+  const tips = [
+    "Apply perfume on pulse points like wrists and neck.",
+    "Don’t rub your wrists together after applying perfume.",
+    "Store perfumes away from direct sunlight to preserve their scent.",
+    "Layer scents with matching body lotions for a stronger effect.",
+    "Try different notes for different seasons – florals in spring, spices in winter."
+  ];
+
+  function showTip() {
+    const randomTip = tips[Math.floor(Math.random() * tips.length)];
+    document.getElementById("perfumeTip").textContent = randomTip;
+  }
+</script>
+
+<!-- Thumbnails Section -->
+<section class="thumbnails">
+  <h2>Discover Our Fragrance Types</h2>
+
+  <div class="thumb-container">
+  <div class="thumb">
+  <img src="C:\Users\Dell\Desktop\Projact_CIT\Images_Video\floral.png" alt="Floral Perfume">
+  <p>Soft Floral Touch</p>
+  </div>
+
+  <div class="thumb">
+  <img src="C:\Users\Dell\Desktop\Projact_CIT\Images_Video\WoodyPerfume.png" alt="Woody Perfume">
+  <p>Deep Woody Notes</p>
+  </div>
+
+  <div class="thumb">
+  <img src="C:\Users\Dell\Desktop\Projact_CIT\Images_Video\CitrusPerfume.png" alt="Citrus Perfume">
+  <p>Fresh Citrus Burst</p>
+  </div>
+  </div>
+</section>
+
+<!--  Why Scents Matter Section -->
+<section class="why-scents">
+  <h2>Why Scents Matter?</h2>
+  <p>
+    Scents evoke emotions, preserve memories, and define presence.
+     A fragrance isn't just a smell—it's a silent signature, 
+     a whispered story left behind wherever you go.
+  </p>
+</section>
+
+<!-- add Footer -->
+<footer class="site-footer">
+  <p>&copy; 2025 Essence Tales. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

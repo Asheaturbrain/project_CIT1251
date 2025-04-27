@@ -1,0 +1,426 @@
+/* ===== NAVBAR STYLE ===== */
+
+header {
+    background-color: #fef3f0; /* Ligth pink */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e17055; /* titel color*/
+    font-family: 'Georgia', serif;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  
+  /* Hover effect */
+
+  .nav-links li a:hover {
+    background-color: #fcded9;
+    color: #d35400;
+  }
+  
+  /* When active (clicked or current page) */
+
+  .nav-links li a:active {
+    background-color: #e17055;
+    color: white;
+  }/*--End navbar--*/
+  
+  /* =====Hero section styles===== */
+  .hero {
+    background-image: url('C:/Users/Dell/Desktop/Projact_CIT/Images_Video/HomeImage.png'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 60vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    color: white; 
+    position: relative; 
+  }
+  /*Black opcity*/
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 2; 
+  }
+  
+  /* Head Style insaid hero*/
+
+  .hero-text h1 {
+    font-size: 5rem; 
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; 
+  }
+
+
+  .hero-text h2 {
+  color: rgb(202, 176, 158);
+  }
+
+  /* P Style insaid hero*/
+  .hero-text p {
+    font-size: 1.2rem; 
+    border: 2px solid rgb(214, 194, 158);
+    border-radius: 40px;
+    font-style: italic;
+    background-color: #c48a63;
+    color: #ebc9b3; 
+  }
+
+  /* ===== Intro Style ===== */
+
+  .intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fffaf7;
+    color: #5c3d2e;
+  }
+  
+  .intro h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #a0522d;
+  }
+  
+  .intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* ===== Style for the tip button ===== */
+.tip-section button {
+    background-color: #d88d65; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Hover effect for the button */
+  .tip-section button:hover {
+    background-color: #b36a4a;
+  }
+  
+  /* Style for the tip text */
+  #perfumeTip {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 18px;
+    color: #5e2d1e; 
+    font-family: 'Georgia', serif;
+  }
+
+  /* ===== Thumbnails Section ===== */
+ .thumbnails {
+    padding: 40px 20px;
+    background-color: #fff8f5;
+    text-align: center;
+  }
+  
+  .thumbnails h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #a74c3c;
+  }
+  
+  .thumb-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .thumb img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .thumb p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #6a4e42;
+  }
+  
+  /* ===== Why Scents Matter Section ===== */
+  .why-scents {
+    padding: 40px 20px;
+    background-color: #fef2ee;
+    text-align: center;
+  }
+  
+  .why-scents h2 {
+    font-size: 26px;
+    color: #c85b44;
+    margin-bottom: 15px;
+  }
+  
+  .why-scents p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  /* ===== Footer ===== */
+  .site-footer {
+    background-color: #c26445;
+    color: #dfc4b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid #e6ccc2;
+  }
+  /*-------------------------END HOME PAGE STYLE-------------------------*/
+
+  body {
+    background-color: #fdf2ee;
+}
+/* Coordination image */
+.p-image {
+display: block;
+width: 50%; 
+height:30%; 
+margin: 20px auto; 
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+/* Coordination h1 */
+  h1.d1{
+color:brown; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-style: italic;
+    text-shadow: 2px 2px 5px royalblue;
+}
+/* Coordination table */
+table {
+    width: 80%;
+    max-width: 1200px;
+    margin-left:auto ;
+    margin-right: auto;
+    text-align:center ;
+    border-collapse: collapse;
+    align-items: center;
+    background-color: white;
+}
+/* Coordination th,td */
+th, td {
+     color: black;
+     font-style: italic;
+    padding: 12px 15px;
+    text-align:center ;
+    border: 1px solid black;
+}
+/* Coordination th */
+th {
+    background-color:#c26445;
+    color: beige;
+    text-align:center ;
+    font-weight: bold;
+}
+/* Coordination tr */
+tr:hover {
+    background-color:#fcded9;
+}
+
+/*-------------------END TOP PICKS STYLE----------------------*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf7;
+  color: #333;
+  padding: 40px;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 
+h1 {
+  color: #8e44ad;
+  margin-bottom: 20px;
+}*/
+
+.perfume-video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  outline: none;
+}
+
+
+.perfume-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.perfume-list li {
+  background-color: #fbe9f0;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/*------------------------END ABOUT PERFUMES STYLE--------------------------*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f5f0;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+.title {
+  background-color: #D97052;
+  color: #f5f5dc;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #c25c40;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  gap: 0;
+}
+
+.row {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+}
+
+.member-card {
+  background-image: url('C:/Users/Dell/Desktop/Projact_CIT/Images_Video/AvatarTeam.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 170px;
+  height: 240px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.member-card::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 20px;
+}
+
+.member-info {
+  position: relative;
+  z-index: 1;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.member-id {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.member-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  .member-card {
+      margin-bottom: 10px;
+}
+}
+
+/*--------------------------END TEAM STYLE---------------------------*/
